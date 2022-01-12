@@ -48,7 +48,12 @@ PRODUCT_PACKAGES := \
     FrameworkResOverlay \
     TelephonyOverlay \
     SystemUIOverlay \
-    SettingsOverlay
+    SettingsOverlay \
+    TetheringConfigOverlay \
+    WifiResCommon
+
+PRODUCT_PACKAGES += \
+    libnl
 
 # Audio
 PRODUCT_PACKAGES += \
