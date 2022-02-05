@@ -27,6 +27,33 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
 
+# Audio
+PRODUCT_PACKAGES += \
+    android.hardware.audio.common@6.0-util \
+    android.hardware.audio.service \
+    android.hardware.audio@6.0-impl \
+    android.hardware.audio.effect@6.0-impl \
+    android.hardware.soundtrigger@2.3-impl \
+    android.hardware.bluetooth.audio@2.1-impl \
+    android.hardware.audio.effect@5.0-impl \
+    android.hardware.soundtrigger@2.2-impl \
+    android.hardware.bluetooth.audio@2.0-impl \
+    audio.a2dp.default \
+    audio.bluetooth.default \
+    audio.r_submix.default \
+    audio.usb.default \
+    audio_policy.stub \
+    libaudiopreprocessing \
+    libbundlewrapper \
+    libdownmix \
+    libdynproc \
+    libeffectproxy \
+    libldnhncr \
+    libreverbwrapper \
+    libvisualizer \
+    libtinycompress \
+
+    
 # Fstab
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.mt6873:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6873
