@@ -20,6 +20,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common DotOS stuff.
 $(call inherit-product, vendor/dot/config/common.mk)
 
+# Inherit from atom device
+$(call inherit-product, device/xiaomi/atom/device.mk)
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := dot_atom
 PRODUCT_DEVICE := atom
