@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- 息屏显示 -->
+    <bool name="config_dozeAlwaysOnEnabled">false</bool>
+    <bool name="config_enableBurnInProtection">true</bool>
+    <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
+
     <!-- 指纹相关配置  -->
     <bool name="config_notifyClientOnFingerprintCancelSuccess">true</bool>
     <bool name="config_supportsScreenOffInDisplayFingerprint">true</bool>
@@ -171,5 +176,5 @@
 
     <!-- 无需解释 -->
     <bool name="config_haveHigherAspectRatioScreen">true</bool>
-    
+
 </resources>
