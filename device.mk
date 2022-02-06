@@ -85,6 +85,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fastbootd
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+    lineage.biometrics.fingerprint.inscreen@1.0-service.atom 
+
 # Fstab
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.mt6873:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6873

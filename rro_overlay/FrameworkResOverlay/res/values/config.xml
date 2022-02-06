@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- 指纹相关配置  -->
+    <bool name="config_notifyClientOnFingerprintCancelSuccess">true</bool>
+    <bool name="config_supportsScreenOffInDisplayFingerprint">true</bool>
+    <bool name="config_supportsInDisplayFingerprint">true</bool>
+
     <!-- 允许用户调节的最大亮度等级 -->
     <integer name="config_screenBrightnessSettingMaximum">255</integer>
 
@@ -164,4 +169,7 @@
     <integer name="config_screenBrightnessForVrSettingMinimum">79</integer>
     <integer name="config_screenBrightnessForVrSettingMaximum">255</integer>
 
+    <!-- 无需解释 -->
+    <bool name="config_haveHigherAspectRatioScreen">true</bool>
+    
 </resources>
