@@ -35,8 +35,11 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 
 # Overlay
 PRODUCT_PACKAGES := \
-    FrameworkResOverlay
-
+    FrameworkResOverlay \
+    TelephonyOverlay \
+    SystemUIOverlay \
+    SettingsOverlay
+    
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.common@6.0-util \
@@ -100,6 +103,32 @@ PRODUCT_PACKAGES += \
     libhidltransport \
     libhwbinder \
     
+# IMS
+PRODUCT_PACKAGES += \
+    vendor.mediatek.hardware.mtkradioex@1.0 \
+    vendor.mediatek.hardware.videotelephony@1.0 \
+    ImsService \
+    EngineerMode \
+    libsink \
+    libem_support_jni \
+    mediatek-common \
+    mediatek-framework \
+    mediatek-ims-base \
+    mediatek-ims-common \
+    mediatek-telecom-common \
+    mediatek-telephony-base \
+    mediatek-telephony-common
+
+	
+PRODUCT_BOOT_JARS += \
+    mediatek-common \
+    mediatek-framework \
+    mediatek-ims-base \
+    mediatek-ims-common \
+    mediatek-telecom-common \
+    mediatek-telephony-base \
+    mediatek-telephony-common
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.mt6873.rc \
