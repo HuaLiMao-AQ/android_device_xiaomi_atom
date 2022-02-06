@@ -39,7 +39,7 @@ PRODUCT_PACKAGES := \
     TelephonyOverlay \
     SystemUIOverlay \
     SettingsOverlay
-    
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.common@6.0-util \
@@ -118,7 +118,6 @@ PRODUCT_PACKAGES += \
     mediatek-telecom-common \
     mediatek-telephony-base \
     mediatek-telephony-common
-
 	
 PRODUCT_BOOT_JARS += \
     mediatek-common \
@@ -135,3 +134,8 @@ PRODUCT_PACKAGES += \
     init.mt6873.usb.rc \
     fstab.mt6873 \
     ueventd.mt6873.rc
+
+# Permissions
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/permissions/privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mediatek.xml \
+    $(LOCAL_PATH)/permissions/privapp-permissions-xiaomi.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-xiaomi.xml \
