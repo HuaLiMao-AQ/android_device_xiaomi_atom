@@ -7,7 +7,7 @@
     <integer name="config_screenBrightnessSettingDefault">102</integer>
 
     <!-- 允许用户调节的最小亮度等级 -->
-    <integer name="config_screenBrightnessSettingMinimum">2</integer>
+    <integer name="config_screenBrightnessSettingMinimum">1</integer>
 
     <!-- 亮度传感器检测频率 单位:毫秒 -->
     <integer name="config_autoBrightnessLightSensorRate">225</integer>
