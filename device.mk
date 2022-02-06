@@ -33,6 +33,10 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
 
+# Overlay
+PRODUCT_PACKAGES := \
+    FrameworkResOverlay
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.common@6.0-util \
