@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-
+<resources>
     <!-- 允许用户调节的最大亮度 -->
     <integer name="config_screenBrightnessSettingMaximum">255</integer>
 
