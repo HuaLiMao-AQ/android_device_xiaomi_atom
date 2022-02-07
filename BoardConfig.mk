@@ -77,6 +77,9 @@ BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 
+# MTK IMS
+TARGET_PROVIDES_MEDIATEK_IMS_STACK := true
+
 # Platform
 TARGET_BOARD_PLATFORM := mt6873
 TARGET_BOARD_PLATFORM_GPU := mali-g57mc5
