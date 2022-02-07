@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2022 The DotOS Project
+# Copyright (C) 2022 The ArrowOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/dot_atom.mk
+	$(LOCAL_DIR)/arrow_atom.mk
 
 COMMON_LUNCH_CHOICES := \
-    dot_atom-user \
-    dot_atom-userdebug \
-    dot_atom-eng
+    arrow_atom-user \
+    arrow_atom-userdebug \
+    arrow_atom-eng
