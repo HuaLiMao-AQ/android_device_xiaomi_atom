@@ -70,10 +70,6 @@ PRODUCT_PACKAGES += \
     libvisualizer \
     libtinycompress \
 
-# Apn
-PRODUCT_COPY_FILES += \
-   $(LOCAL_PATH)/configs/apns-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xml
-
 # Bluetooth
 PRODUCT_PACKAGES += \
     btremoted \
