@@ -19,6 +19,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
+# Inherit properties
+include $(LOCAL_PATH)/properties.mk
+PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
@@ -33,16 +37,12 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
 
-# Inherit properties
-include $(LOCAL_PATH)/properties.mk
-PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
-
 # Overlay
 PRODUCT_PACKAGES := \
     FrameworkResOverlay \
     TelephonyOverlay \
     SystemUIOverlay \
-    SettingsOverlay 
+    SettingsOverlay
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -106,10 +106,6 @@ PRODUCT_PACKAGES += \
     android.hidl.manager@1.0 \
     libhidltransport \
     libhwbinder \
-
-# ImsInit
-PRODUCT_PACKAGES += \
-    ImsInit
 
 # Ramdisk
 PRODUCT_PACKAGES += \
