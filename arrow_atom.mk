@@ -24,7 +24,7 @@ $(call inherit-product, vendor/arrow/config/common.mk)
 $(call inherit-product, device/xiaomi/atom/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := dot_atom
+PRODUCT_NAME := arrow_atom
 PRODUCT_DEVICE := atom
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := M2004J7AC
