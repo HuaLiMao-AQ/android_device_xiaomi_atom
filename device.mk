@@ -33,12 +33,16 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
 
+# Inherit properties
+include $(LOCAL_PATH)/properties.mk
+PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
+
 # Overlay
 PRODUCT_PACKAGES := \
     FrameworkResOverlay \
     TelephonyOverlay \
     SystemUIOverlay \
-    SettingsOverlay
+    SettingsOverlay 
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -65,6 +69,10 @@ PRODUCT_PACKAGES += \
     libreverbwrapper \
     libvisualizer \
     libtinycompress \
+
+# Apn
+PRODUCT_COPY_FILES += \
+   $(LOCAL_PATH)/configs/apns-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xml
 
 # Bluetooth
 PRODUCT_PACKAGES += \
@@ -102,6 +110,10 @@ PRODUCT_PACKAGES += \
     android.hidl.manager@1.0 \
     libhidltransport \
     libhwbinder \
+
+# ImsInit
+PRODUCT_PACKAGES += \
+    ImsInit
 
 # Ramdisk
 PRODUCT_PACKAGES += \

@@ -4,5 +4,9 @@
     <application android:hasCode="false" />
     <overlay android:targetPackage="android"
                    android:isStatic="true"
-                   android:priority="1"/>
+                   android:priority="97"/>
+    
+    <application android:label="@string/overlay_name" 
+            android:hasCode="false"/>
+
 </manifest>
