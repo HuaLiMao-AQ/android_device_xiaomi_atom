@@ -1,5 +1,0 @@
-dex_import {
-	name: "mediatek-telephony-base",
-	owner: "xiaomi",
-	jars: ["mediatek-telephony-base.jar"],
-}

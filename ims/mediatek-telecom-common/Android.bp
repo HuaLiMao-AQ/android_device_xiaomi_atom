@@ -1,5 +1,0 @@
-dex_import {
-	name: "mediatek-telecom-common",
-	owner: "xiaomi",
-	jars: ["mediatek-telecom-common.jar"],
-}

@@ -102,31 +102,6 @@ PRODUCT_PACKAGES += \
     android.hidl.manager@1.0 \
     libhidltransport \
     libhwbinder \
-    
-# IMS
-PRODUCT_PACKAGES += \
-    vendor.mediatek.hardware.mtkradioex@1.0 \
-    vendor.mediatek.hardware.videotelephony@1.0 \
-    ImsService \
-    EngineerMode \
-    libsink \
-    libem_support_jni \
-    mediatek-common \
-    mediatek-framework \
-    mediatek-ims-base \
-    mediatek-ims-common \
-    mediatek-telecom-common \
-    mediatek-telephony-base \
-    mediatek-telephony-common
-	
-PRODUCT_BOOT_JARS += \
-    mediatek-common \
-    mediatek-framework \
-    mediatek-ims-base \
-    mediatek-ims-common \
-    mediatek-telecom-common \
-    mediatek-telephony-base \
-    mediatek-telephony-common
 
 # Ramdisk
 PRODUCT_PACKAGES += \

@@ -1,5 +1,0 @@
-dex_import {
-	name: "mediatek-ims-common",
-	owner: "xiaomi",
-	jars: ["mediatek-ims-common.jar"],
-}

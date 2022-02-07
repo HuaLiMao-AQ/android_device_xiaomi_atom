@@ -1,5 +1,0 @@
-dex_import {
-	name: "mediatek-framework",
-	owner: "xiaomi",
-	jars: ["mediatek-framework.jar"],
-}
