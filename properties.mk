@@ -1,7 +1,3 @@
-# ADB
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.adb.secure=0
-
 # Audio
 PRODUCT_PRODUCT_PROPERTIES += \
     audio.offload.min.duration.secs=30
@@ -514,4 +510,4 @@ PRODUCT_PROPERTY_OVERRIDES +=  \
     vendor.camera.mdp.hfg.enable=1 \
     vendor.connsys.driver.ready=no \
     vendor.mtk.camera.app.fd.video=1 \
-    vendor.mtk.vdec.waitkeyframeforplay=9 \
+    vendor.mtk.vdec.waitkeyframeforplay=9 
