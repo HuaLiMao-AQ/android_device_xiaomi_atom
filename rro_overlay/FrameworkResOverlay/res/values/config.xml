@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- OLED 防烧屏 -->
+    <bool name="config_enableBurnInProtection">true</bool>
+    
     <!-- 指纹相关配置  -->
     <bool name="config_notifyClientOnFingerprintCancelSuccess">true</bool>
     <bool name="config_supportsScreenOffInDisplayFingerprint">true</bool>
