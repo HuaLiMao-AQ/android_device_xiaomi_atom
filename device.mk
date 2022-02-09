@@ -130,6 +130,7 @@ PRODUCT_PACKAGES += \
     fstab.enableswap \
     fstab.mt6873 \
     ueventd.mt6873.rc \
+    init.logcat.rc
 
 # RCS
 PRODUCT_PACKAGES += \

@@ -5,6 +5,7 @@ import /vendor/etc/init/init.batteryd.rc
 import /vendor/etc/init/init.batterysecret.rc
 import /vendor/etc/init/init.charge_logger.rc
 import /vendor/etc/init/init.mishow.ctl.rc
+import /vendor/etc/init/hw/init.logcat.rc
 
 on init
     mkdir /mnt/media_rw/usbotg 0700 media_rw media_rw
