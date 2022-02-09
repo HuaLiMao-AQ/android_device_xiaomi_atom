@@ -1864,10 +1864,6 @@ vendor/bin/watch
 vendor/bin/wlan_assistant
 vendor/bin/wmt_launcher
 vendor/bin/wmt_loader
--vendor/data-app/Health/Health.apk
--vendor/data-app/SmartHome/SmartHome.apk
--vendor/data-app/wps-lite/wps-lite.apk
--vendor/data-app/XMRemoteController/XMRemoteController.apk
 vendor/data/misc/ProjectConfig.mk
 vendor/etc/.tp/.ht120.mtc
 vendor/etc/102_SummerDay.png
