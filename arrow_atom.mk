@@ -22,7 +22,6 @@ $(call inherit-product, vendor/arrow/config/common.mk)
 
 # Inherit from atom device
 $(call inherit-product, device/xiaomi/atom/device.mk)
-$(call inherit-product, vendor/xiaomi/atom/atom-vendor.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := arrow_atom

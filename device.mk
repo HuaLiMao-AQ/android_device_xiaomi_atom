@@ -19,8 +19,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
-# Inherit Vendor properties
-include $(LOCAL_PATH)/vendor_prop.mk
+# Inherit properties
+include $(LOCAL_PATH)/properties.mk
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # Soong namespaces
@@ -109,25 +109,8 @@ PRODUCT_PACKAGES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    factory_init.connectivity.rc \
-    factory_init.project.rc \
-    factory_init.rc \
-    init.aee.rc \
-    init.ago.rc \
-    init.cgroup.rc \
-    init.connectivity.rc \
-    init.modem.rc \
     init.mt6873.rc \
     init.mt6873.usb.rc \
-    init.project.rc \
-    init.sensor_2_0.rc \
-    meta_init.connectivity.rc \
-    meta_init.modem.rc \
-    meta_init.project.rc \
-    meta_init.rc \
-    multi_init.rc \
-    fstab.emmc \
-    fstab.enableswap \
     fstab.mt6873 \
     ueventd.mt6873.rc \
     init.logcat.rc
