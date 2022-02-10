@@ -409,7 +409,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.vc_call_vol_default=4 \
     ro.control_privapp_permissions=enforce \
     ro.crypto.volume.filenames_mode=aes-256-cts \
-    ro.frp.pst=/dev/block/platform/bootdevice/by-name/frp \
     ro.hardware.egl=meow \
     ro.hardware.fp.fod=true \
     ro.mtk_cam_stereo_camera_support=1 \
