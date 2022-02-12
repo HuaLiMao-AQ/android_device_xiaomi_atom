@@ -49,6 +49,7 @@ PRODUCT_PACKAGES := \
     TelephonyOverlay \
     SystemUIOverlay \
     SettingsOverlay \
+    TelephonyOverlay \
     TetheringConfigOverlay \
     WifiResCommon
 
@@ -80,14 +81,43 @@ PRODUCT_PACKAGES += \
     libreverbwrapper \
     libvisualizer \
     libtinycompress \
-    libldacBT_bco
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_policy_configuration.xml \
+    $(LOCAL_PATH)/configs/audio/audio_effects.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_effects.conf \
+    $(LOCAL_PATH)/configs/audio/audio_policy_configuration_bluetooth_legacy_hal.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_policy_configuration_bluetooth_legacy_hal.xml \
+    $(LOCAL_PATH)/configs/audio/audio_policy_volumes.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_policy_volumes.xml \
+    $(LOCAL_PATH)/configs/audio/audio_policy_configuration_stub.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_policy_configuration_stub.xml \
+    $(LOCAL_PATH)/configs/audio/audio_policy_engine_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_policy_engine_configuration.xml \
+    $(LOCAL_PATH)/configs/audio/audio_policy_engine_default_stream_volumes.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_policy_engine_default_stream_volumes.xml \
+    $(LOCAL_PATH)/configs/audio/audio_policy_engine_product_strategies.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_policy_engine_product_strategies.xml \
+    $(LOCAL_PATH)/configs/audio/audio_policy_engine_stream_volumes.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_policy_engine_stream_volumes.xml \
+    $(LOCAL_PATH)/configs/audio/hearing_aid_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/hearing_aid_audio_policy_configuration.xml \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
     btremoted \
     libldacBT_dec \
     libbt-vendor \
-    libbluetooth_mtk
+    libbluetooth_mtk \
+    libldacBT_bco
+
+# Sensors
+PRODUCT_PACKAGES += \
+    libsensorndkbridge
+
+# Thermal
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@1.0-impl \
+    android.hardware.thermal@2.0-impl
+
+# TinyXML
+PRODUCT_PACKAGES += \
+    libtinyxml
+
+# Vibrator
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator@1.0-impl \
 
 # Display
 PRODUCT_PACKAGES += \
@@ -99,6 +129,28 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
     libvulkan
+
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.0-impl:64 \
+    android.hardware.drm@1.0-service-lazy \
+    android.hardware.drm@1.3-service.clearkey
+
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0-service \
+    android.hardware.gatekeeper@1.0-impl
+
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.1-impl \
+    android.hardware.health@2.1-impl.recovery \
+    android.hardware.health@2.1-service
+
+# IR
+PRODUCT_PACKAGES += \
+    android.hardware.ir@1.0-impl \
+    android.hardware.ir@1.0-service
 
 # Fastbootd
 PRODUCT_PACKAGES += \
@@ -121,6 +173,34 @@ PRODUCT_PACKAGES += \
     android.hidl.manager@1.0 \
     libhidltransport \
     libhwbinder \
+
+# IMS
+PRODUCT_PACKAGES += \
+	vendor.mediatek.hardware.mtkradioex@1.0 \
+	vendor.mediatek.hardware.videotelephony@1.0 \
+	ImsService \
+	EngineerMode \
+	libsink \
+	libem_support_jni \
+
+PRODUCT_PACKAGES += \
+	mediatek-common \
+    mediatek-framework \
+    mediatek-ims-base \
+    mediatek-ims-common \
+    mediatek-telecom-common \
+    mediatek-telephony-base \
+    mediatek-telephony-common
+
+	
+PRODUCT_BOOT_JARS += \
+    mediatek-common \
+    mediatek-framework \
+    mediatek-ims-base \
+    mediatek-ims-common \
+    mediatek-telecom-common \
+    mediatek-telephony-base \
+    mediatek-telephony-common
 
 # Ramdisk
 PRODUCT_PACKAGES += \
