@@ -80,6 +80,7 @@ PRODUCT_PACKAGES += \
     libreverbwrapper \
     libvisualizer \
     libtinycompress \
+    libldacBT_bco
 
 # Bluetooth
 PRODUCT_PACKAGES += \
