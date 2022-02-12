@@ -1,2 +1,90 @@
- soong_namespace {
- }
+android_app_import {
+	name: "EngineerMode",
+	owner: "xiaomi",
+	apk: "ims/EngineerMode.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
+	name: "ImsService",
+	owner: "xiaomi",
+	apk: "ims/ImsService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libem_support_jni",
+  compile_multilib: "both",
+  check_elf_files: false,
+	owner: "mtk",
+	target: {
+		android_arm: {
+			srcs: ["ims/arm/libem_support_jni.so"],
+		},
+		android_arm64: {
+			srcs: ["ims/arm64/libem_support_jni.so"],
+		},
+	},
+}
+
+cc_prebuilt_library_shared {
+  name: "libsink",
+  compile_multilib: "both",
+  check_elf_files: false,
+	owner: "mtk",
+	target: {
+		android_arm: {
+			srcs: ["ims/libsink.so"],
+		},
+	},
+}
+
+dex_import {
+	name: "mediatek-common",
+	owner: "xiaomi",
+	jars: ["ims/mediatek-common.jar"],
+}
+
+dex_import {
+	name: "mediatek-ims-base",
+	owner: "xiaomi",
+	jars: ["ims/mediatek-ims-base.jar"],
+}
+
+dex_import {
+	name: "mediatek-ims-common",
+	owner: "xiaomi",
+	jars: ["ims/mediatek-ims-common.jar"],
+}
+
+dex_import {
+	name: "mediatek-framework",
+	owner: "xiaomi",
+	jars: ["ims/mediatek-framework.jar"],
+}
+
+dex_import {
+	name: "mediatek-telecom-common",
+	owner: "xiaomi",
+	jars: ["ims/mediatek-telecom-common.jar"],
+}
+
+dex_import {
+	name: "mediatek-telephony-base",
+	owner: "xiaomi",
+	jars: ["ims/mediatek-telephony-base.jar"],
+}
+
+dex_import {
+	name: "mediatek-telephony-common",
+	owner: "xiaomi",
+	jars: ["ims/mediatek-telephony-common.jar"],
+}
